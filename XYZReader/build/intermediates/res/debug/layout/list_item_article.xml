@@ -2,10 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="@dimen/main_card_margin"
+    android:layout_marginRight="@dimen/main_card_margin"
+    android:layout_marginTop="@dimen/main_card_margin"
+    android:layout_marginBottom="@dimen/main_card_margin"
+    android:elevation="@dimen/main_card_elevation"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground">
@@ -18,20 +19,18 @@
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@color/photo_placeholder" />
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
 
         <TextView
             android:id="@+id/article_title"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="4dp"
-            android:textColor="@color/ltgray"
+            android:paddingLeft="@dimen/main_text_padding"
+            android:paddingTop="@dimen/main_text_padding"
+            android:paddingRight="@dimen/main_text_padding"
+            android:paddingBottom="@dimen/main_text_padding_bottom"
             android:ellipsize="end"
             android:maxLines="4" />
 
@@ -40,10 +39,9 @@
             style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#6000"
+            android:paddingLeft="@dimen/main_text_padding"
+            android:paddingRight="@dimen/main_text_padding"
+            android:paddingBottom="@dimen/main_text_padding"
             android:maxLines="1"
             android:singleLine="true"
             android:ellipsize="end" />
